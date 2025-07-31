@@ -43,17 +43,17 @@ export const CoachingOptions = [
 
 export const CoachingExpert = [
     {
-        name: 'Joanna',
+        name: 'Baishali',
         avatar: '/t1.avif',
         pro: false
     },
     {
-        name: 'Salli',
+        name: 'Taylor Swift',
         avatar: '/t2.jpg',
         pro: false
     },
     {
-        name: 'Joey',
+        name: 'Sundorom',
         avatar: '/t3.jpg',
         pro: false
     },
