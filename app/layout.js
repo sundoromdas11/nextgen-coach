@@ -1,4 +1,3 @@
-import ClientOnly from "./_components/ClientOnly";
 import { Geist, Geist_Mono } from "next/font/google";
 import { StackProvider, StackTheme } from "@stackframe/stack";
 import { stackServerApp } from "../stack";
@@ -24,19 +23,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <ClientOnly>
-          <StackProvider app={stackServerApp}>
-            <StackTheme>
-              <Provider>
-                {children}
-                <Toaster />
-              </Provider>
-            </StackTheme>
-          </StackProvider>
-        </ClientOnly>
-      </body>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      ><StackProvider app={stackServerApp}><StackTheme>
+        <Provider>
+          {children}
+          <Toaster />
+        </Provider>
+      </StackTheme></StackProvider></body>
     </html>
   );
 }
+
 
