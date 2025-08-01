@@ -1,4 +1,4 @@
-import ClientOnly from "@/_components/ClientOnly";
+import ClientOnly from "./_components/ClientOnly";
 import { Geist, Geist_Mono } from "next/font/google";
 import { StackProvider, StackTheme } from "@stackframe/stack";
 import { stackServerApp } from "../stack";
